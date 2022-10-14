@@ -6,7 +6,6 @@ import express from "express";
 import morgan from "morgan";
 
 // local imports
-import authRoutes from "./routes/user.routes";
 import notesRoutes from "./routes/notes.routes";
 import connectDb from "./db/db";
 import expressErrorMiddleware from "./middleware/express-middleware";
@@ -18,7 +17,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // routes
-app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/notes", notesRoutes);
 app.use(expressErrorMiddleware);
 
