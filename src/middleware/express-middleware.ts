@@ -22,9 +22,9 @@ const expressErrorMiddleware = (
 		customErr.statusCode = 401;
 	}
 	if (err.code && err.code === 11000) {
-		customErr.msg = `Duplicate value entered for ${Object.keys(
+		customErr.msg = `Choose another value for ${Object.keys(
 			err.keyValue
-		)} field, please choose another value`;
+		)} field(s)`;
 		customErr.statusCode = 400;
 	}
 
