@@ -1,5 +1,7 @@
 import { StatusCodes } from "http-status-codes";
 import { RequestHandler } from "express";
+
+// local imports
 import error from "../errors";
 import {
 	createNoteService,

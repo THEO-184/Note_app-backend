@@ -1,4 +1,6 @@
 import { Schema, model } from "mongoose";
+
+// local imports
 import { NotesDocument } from "../utils/types/notes.type";
 
 const NotesSchema = new Schema<NotesDocument>(

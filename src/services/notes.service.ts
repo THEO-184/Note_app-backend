@@ -1,5 +1,6 @@
-import { RequestHandler } from "express";
 import { FilterQuery, UpdateQuery } from "mongoose";
+
+// local imports
 import error from "../errors";
 import Notes from "../model/notes.model";
 import { NotesDocument, NotesInput } from "../utils/types/notes.type";
