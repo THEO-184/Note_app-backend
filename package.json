@@ -3,9 +3,12 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"engines": {
+		"node": "12.x"
+	},
 	"scripts": {
-		"dev": "nodemon ./src/app.ts",
-		"start": "node ./build/app.js",
+		"dev": "nodemon src/app.ts",
+		"start": "node build/app.js",
 		"build": "tsc -p ."
 	},
 	"keywords": [],

@@ -31,7 +31,7 @@ app.use(body_parser_1.default.urlencoded({ extended: false }));
 // routes
 app.use("/api/v1/notes", notes_routes_1.default);
 app.use(express_middleware_1.default);
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const start = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield (0, db_1.default)(process.env.MONGO_URI);

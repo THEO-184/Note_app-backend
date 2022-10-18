@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/api/v1/notes", notesRoutes);
 app.use(expressErrorMiddleware);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const start = async () => {
 	try {
